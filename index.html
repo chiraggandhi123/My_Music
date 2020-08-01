@@ -6,20 +6,63 @@
     <title>Document</title>
         <!-- CSS only -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="contianer-fluid">
-    <div class="row display-2 text-light bg-dark"><p class="mx-auto my-auto">MUSIC</p> 
-    <i class="fa fa-search icon mr-5"></i>
+<div class="contianer-fluid" >
+    <!-- SIDENAV -->
+    <div class="sidenav pt-4">
+        
+        <div class="row mb-4">
+            <p class="pl-5  h2 text-white ">
+                <i class="fa fa-music"> MUSIC</i>
+            </p>
+            
+        </div>
+        <li><a href="#Home"><i class="fa fa-home">&nbsp;&nbsp;&nbsp;Home</i></a></li>
+        <li><a href="#Search"><i class="fa fa-search">&nbsp;&nbsp;&nbsp;Search</i></a></li>
+        <li><a href="#Library"><i class="fa fa-book">&nbsp;&nbsp;&nbsp;Your Library</i></a></li>
+        
     </div>
+    <!-- !SIDENAV -->
+    <div class="center-content">
+      <ul id="list">
+        <li id="1">1.wav</li>
+        <li id="2">2.wav</li>
+        <li id="3">clock.mp3</li>
+        <li id="4">snakes.mp3</li>
+        <li id="5">dogs.mp3</li>
+        <li id="6">6.mp3</li>
+      </ul>
+    </div>
+    
+    <!-- FOOTPLAYER -->
 
+    <div class="row fixed-bottom player">
+        
+        
+
+        <div class="col-4"></div>
+        <div class="col-4 middle">
+            <audio id="myTune" >
+                <source src = "1.wav">
+            </audio>
+            
+            <i class="fa fa-chevron-circle-left fa-2x" onclick="prev()" aria-hidden="true"></i>
+            <i class="fa fa-play-circle fa-2x" id="play" onclick="document.getElementById('myTune').play(); play_button();" aria-hidden="true"></i>
+            <i class="fa fa-chevron-circle-right fa-2x" onclick="next()" aria-hidden="true"></i>
+            
+        </div>
+        <div class="col-4"></div>
+    </div>
 </div>
 <!-- JS, Popper.js, and jQuery -->
+<script src="./app.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/7c8dcd2488.js"></script>
+
 
 </body>
 </html>

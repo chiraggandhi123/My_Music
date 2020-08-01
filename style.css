@@ -1,3 +1,95 @@
-.icon{
-    font-size: 0.1rem;
+
+body{
+    height: 1000px;
+    width: 100%;
+    background-color:#121212;
+    }
+
+.logo{
+    width: 10px;
+    height: 100px;
+}
+.sidenav{
+height: 100%;
+width:232px;
+background-color: #040404;
+z-index: 1;
+
+margin-top:0 ;
+margin-left: 0;
+position: fixed;
+overflow-x: hidden;
+}
+i:hover{
+    color:white;
+}
+li a{
+    text-decoration: none;
+    color:white;
+    font-size: 24px;
+    
+}
+li a:hover{
+    color:white;
+}
+li{
+    margin-left:30px;
+    margin-top:20px;
+    list-style: none;
+    background-color: #040404;
+    width:80%;
+    
+    height: 40px;
+    border-radius: 4%;
+}
+li:hover{
+    background-color: #333;
+}
+.player{
+    height: 90px;
+    width: 100%;
+    margin-left: 0px;
+    position: fixed;
+    margin-bottom: 0px;
+    background-color:#282828;
+    color:red;
+    margin-right: 0px;
+    z-index: 1;
+    border-top: 1px solid black;
+}
+.middle{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.center-content{
+    margin-left:300px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 1000px;
+    z-index: 0;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.card{
+
+    margin: auto;
+    margin-bottom: 100px;
+    height: 300px;
+    border-radius: 10px 10px;
+    background-color: #282828;
+    color:white;
+    align-items: center;
+    padding-top:10px;
+    
+}
+.card img{
+    width:180px;
+    height: 200px;
+    padding: auto;
+}
+.center-content ul{
+    color:red;
+    width:100%;
 }
